@@ -1,23 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Button } from './components/Message/Button';
+import React, { Fragment } from 'react'
+import { Button } from './components/Button/Button';
+import { Input } from './components/Input';
+
+// import style from './App.module.css';
+
+const toggle = true
+
 function App() {
-    return (
-        <>
-            <h1>Welcome to REACT!</h1>
-            <Button />
-        </>
-    )
+  return (
+    <>
+      <h2>Hello Geekbrains</h2>
+      {toggle && <Input />}
+      <Button name={'geekbrains'} />
+      <Button name={'Ivan'}  />
+    </>
+  )
 }
-/*class App extends React.Component {
-    render() {
-        return (
-            <>
-            <h1>Welcome to REACT!</h1>
-            <Button/>
-            </>
-        )
-    }
-}*/
+
 export default App;
-//ReactDOM.render(<App />, document.getElementById('root'));*/
